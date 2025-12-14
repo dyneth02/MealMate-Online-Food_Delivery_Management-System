@@ -1,0 +1,97 @@
+/* Reset some basic styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Background overlay with blur effect */
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/wallpaperflare.com_wallpaper (4).jpg'); /* Change to your background image */
+    background-size: cover; /* Cover the entire screen */
+    background-position: center; /* Center the image */
+    filter: blur(10px); /* Blur effect */
+    z-index: -1; /* Send the overlay behind other elements */
+}
+
+/* Centering the login container */
+.login-container {
+    width: 100%;
+    max-width: 400px; /* Limit maximum width */
+    margin: 100px auto; /* Center the container vertically and horizontally */
+    padding: 40px; /* Add padding for inner spacing */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow for depth */
+}
+
+/* Heading styling */
+.login-container h2 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 30px; /* Space below heading */
+    color: #333; /* Darker text color */
+    font-weight: 600; /* Semi-bold font weight */
+    font-size: 24px; /* Increase font size */
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 20px; /* Space below each form group */
+}
+
+/* Label styling */
+.form-group label {
+    font-weight: 500; /* Medium weight for labels */
+    margin-bottom: 8px; /* Space below label */
+    display: block; /* Block display for proper spacing */
+    color: #555; /* Dark gray for labels */
+}
+
+/* Input styling */
+.form-control {
+    width: 100%; /* Full width input fields */
+    padding: 12px; /* Padding for input fields */
+    border: 1px solid #ced4da; /* Light gray border */
+    border-radius: 5px; /* Slightly rounded corners */
+    font-size: 16px; /* Increase font size */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+/* Input focus styling */
+.form-control:focus {
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Shadow on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Button styling */
+.btn {
+    background-color: #007bff; /* Primary button color */
+    color: #ffffff; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 12px; /* Padding for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Increase font size */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive styling */
+@media (max-width: 500px) {
+    .login-container {
+        width: 90%; /* Adjust width for smaller screens */
+        margin: 50px auto; /* Adjust margin for smaller screens */
+        padding: 30px; /* Reduce padding */
+    }
+}
